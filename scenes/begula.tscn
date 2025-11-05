@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcjqcv4ur4n7u"]
+
+[ext_resource type="Script" uid="uid://cmuwtp0dpb6rt" path="res://scripts/begula.gd" id="1_0tumj"]
+[ext_resource type="Texture2D" uid="uid://by1n3orioppgd" path="res://assets/beluga_idlet.png" id="1_2u661"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0tumj"]
+radius = 18.0
+height = 48.0
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_0tumj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2u661")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_0tumj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
