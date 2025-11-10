@@ -2065,6 +2065,7 @@ layer_0/tile_data = PackedInt32Array(1507328, 0, 0, 1572864, 0, 1, 1638400, 0, 2
 position = Vector2(320, 240)
 
 [node name="Camera2D" type="Camera2D" parent="RigidBody2D"]
+position = Vector2(73, -51)
 limit_bottom = 500
 limit_smoothed = true
 position_smoothing_enabled = true
