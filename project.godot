@@ -14,3 +14,12 @@ config/name="chicote"
 run/main_scene="uid://wyfh4edi2qso"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
