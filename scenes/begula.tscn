@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcjqcv4ur4n7u"]
+[gd_scene load_steps=6 format=3 uid="uid://bcjqcv4ur4n7u"]
 
 [ext_resource type="Script" uid="uid://cmuwtp0dpb6rt" path="res://scripts/begula.gd" id="1_0tumj"]
 [ext_resource type="Texture2D" uid="uid://by1n3orioppgd" path="res://assets/beluga_idlet.png" id="1_2u661"]
 [ext_resource type="Texture2D" uid="uid://gh3wkjvh22fn" path="res://assets/beluga_hit.png" id="3_tciax"]
+[ext_resource type="AudioStream" uid="uid://b4axy251vm0ad" path="res://assets/music/game.mp3" id="4_dw82w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0tumj"]
 radius = 18.0
@@ -32,5 +33,8 @@ zoom = Vector2(2, 2)
 [node name="HitTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_dw82w")
 
 [connection signal="timeout" from="HitTimer" to="." method="_on_HitTimer_timeout"]

@@ -9,9 +9,11 @@
 
 [node name="Menu" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yqeox")
@@ -27,10 +29,9 @@ parallax_speed = 0.01
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(-28, -21)
-scale = Vector2(1.0875, 1.0875)
+position = Vector2(3, -1.9073486e-06)
+scale = Vector2(1.8390138, 1.7990125)
 texture = ExtResource("3_con2f")
-offset = Vector2(320, 240)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Parallax2D"]
 anchors_preset = 8
@@ -53,28 +54,29 @@ script = ExtResource("2_4ytvr")
 [node name="start" type="Button" parent="Parallax2D/VBoxContainer/Control"]
 visibility_layer = 3
 layout_mode = 0
-offset_left = 191.0
-offset_right = 349.0
-offset_bottom = 31.0
+offset_left = -37.0
+offset_top = -254.0
+offset_right = 121.0
+offset_bottom = -223.0
 theme = ExtResource("6_g3eks")
 text = "Start"
 
 [node name="quit" type="Button" parent="Parallax2D/VBoxContainer/Control"]
 visibility_layer = 3
 layout_mode = 0
-offset_left = 191.0
-offset_top = 45.0
-offset_right = 349.0
-offset_bottom = 76.0
+offset_left = -37.0
+offset_top = -209.0
+offset_right = 121.0
+offset_bottom = -178.0
 theme = ExtResource("6_g3eks")
 text = "Quit"
 
 [node name="title" type="Label" parent="Parallax2D/VBoxContainer/Control"]
 layout_mode = 0
-offset_left = 85.0
-offset_top = -77.0
-offset_right = 467.0
-offset_bottom = 5.0
+offset_left = -143.0
+offset_top = -331.0
+offset_right = 239.0
+offset_bottom = -249.0
 theme = ExtResource("6_g3eks")
 theme_override_colors/font_color = Color(0.04446566, 0.15918982, 0.3044171, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
@@ -84,10 +86,10 @@ horizontal_alignment = 1
 
 [node name="Label" type="Label" parent="Parallax2D/VBoxContainer/Control"]
 layout_mode = 0
-offset_left = 186.0
-offset_top = 211.0
-offset_right = 405.0
-offset_bottom = 234.0
+offset_left = -42.0
+offset_top = -43.0
+offset_right = 177.0
+offset_bottom = -20.0
 theme = ExtResource("6_g3eks")
 theme_override_font_sizes/font_size = 12
 text = "made by Andrey and Tamires"

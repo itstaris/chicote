@@ -11,6 +11,7 @@ var force := 0.0
 var charging := false
 var launched := false
 var extra_clicks := 0
+var music_started := false
 
 @onready var sprite_idle = $SpriteIdle
 @onready var sprite_hit = $SpriteHit
@@ -20,6 +21,7 @@ var extra_clicks := 0
 	get_tree().get_root().find_child("Whip2", true, false),
 	get_tree().get_root().find_child("Whip3", true, false)
 ]
+@onready var music_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 var barra_forca: ProgressBar
 
@@ -59,6 +61,9 @@ func launch():
 	force = 0
 	extra_clicks = 0
 	update_whip_icons()
+	if not music_started:
+		music_player.play()
+		music_started = true
 
 func give_extra_boost():
 	if extra_clicks < max_extra_clicks:
@@ -86,3 +91,7 @@ func update_whip_icons():
 	for i in range(max_extra_clicks):
 		if whip_icons[i]:
 			whip_icons[i].visible = i >= extra_clicks
+
+
+func _on_Timer_timeout() -> void:
+	pass # Replace with function body.
