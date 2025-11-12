@@ -1,0 +1,16 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://kc8yiobwymhn"]
+
+[ext_resource type="FontFile" uid="uid://dqxv77heb4i8o" path="res://fonts and themes/nokiafc22.ttf" id="1_b006m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jsqx0"]
+bg_color = Color(0.8974365, 0.41106725, 0.33634448, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[resource]
+default_font = ExtResource("1_b006m")
+Button/font_sizes/font_size = 19
+Button/styles/normal = SubResource("StyleBoxFlat_jsqx0")
+Label/fonts/font = ExtResource("1_b006m")
